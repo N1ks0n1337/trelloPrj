@@ -1,0 +1,100 @@
+.container__list {
+    padding: 20px;
+    width: 450px;
+    margin-left: 0px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bth {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: palegoldenrod;
+    font-weight: bold;
+}
+
+.container__list {
+    border: 2px solid cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    color: darkgoldenrod;
+}
+
+h2 {
+    color: darkolivegreen;
+    font-size: 25px;
+}
+
+input {
+    height: 40px;
+    border: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+._p {
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+}
+
+.btn__block {
+    margin-top: 20px;
+}
+
+.bth:hover {
+    background-color: cyan;
+    transition: ease 2s all;
+}
+
+.container__desk {
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    max-width: 1600px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.list {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 2s ease;
+}
+
+.delete-card {
+    display: none;
+    transition: all 2s ease;
+}
+
+.delete-card {
+    margin: 0;
+}
+
+.card:hover .delete-card {
+    display: block;
+}
