@@ -39,7 +39,7 @@ function addList() {
     addCardButton.classList.add("list-cards");
     let addCardText = document.createElement("p");
     addCardText.classList.add("add-card");
-    addCardText.innerHTML = "+ Добавить Trello";
+    addCardText.innerHTML = "+ Добавить подзадачу";
     addCardButton.append(addCardText);
 
     list.append(addCardButton);
