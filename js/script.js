@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const bthCreateList = document.getElementById("bth-create-list"); //элемент с id = bth-create-list
 const desk = document.getElementById("desk"); //элемент с id=desk
@@ -52,13 +52,13 @@ function addList() {
     btnClearList.addEventListener("click", function() {
         desk.innerHTML = "";
         num = 1;
-    })
+    });
     desk.append(list); //добавить элемент в конец контейнера desk
 }
 
 desk.addEventListener("click", e => {
     editList(e);
-})
+});
 
 function editList(e) {
     let obj = e.target;
