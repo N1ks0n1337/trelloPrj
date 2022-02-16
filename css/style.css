@@ -76,7 +76,7 @@ input {
 }
 
 .bth:hover {
-    background-color: rgb(0, 161, 161);
+    background-color: rgba(63, 76, 107, 1);
     transition: ease 2s all;
 }
 
