@@ -1,100 +1,123 @@
-.container__list {
-    padding: 20px;
-    width: 450px;
-    margin-left: 0px;
-    border-radius: 25px;
-    font-size: 20px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.bth {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    height: 40px;
-    width: 150px;
-    border-radius: 20px;
-    background-color: palegoldenrod;
-    font-weight: bold;
-}
-
-.container__list {
-    border: 2px solid cyan;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-p {
-    color: darkgoldenrod;
-}
-
-h2 {
-    color: darkolivegreen;
-    font-size: 25px;
-}
-
-input {
-    height: 40px;
-    border: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-._p {
-    font-size: 40px;
-    font-weight: bold;
-    color: blue;
-}
-
-.btn__block {
-    margin-top: 20px;
-}
-
-.bth:hover {
-    background-color: cyan;
-    transition: ease 2s all;
-}
-
-.container__desk {
-    align-items: flex-start;
-    margin: 20px;
-    padding: 20px;
-    max-width: 1600px;
-    height: 500px;
-    flex-wrap: wrap;
-}
-
-.list {
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: all 2s ease;
-}
-
-.delete-card {
-    display: none;
-    transition: all 2s ease;
-}
-
-.delete-card {
-    margin: 0;
-}
-
-.card:hover .delete-card {
-    display: block;
-}
+    .container__list {
+        padding-left: 20px;
+        border-radius: 0px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        margin: 0 auto;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background: linear-gradient(to bottom left, cyan 00%, palegoldenrod 100%);
+    }
+    
+    .bth {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        height: 40px;
+        width: 150px;
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 2px solid white;
+    }
+    
+    .container__list {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 10px 20px;
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+    }
+    
+    .container__list>* {
+        display: inline-block;
+    }
+    
+    p {
+        color: darkgoldenrod;
+    }
+    
+    h2 {
+        color: darkolivegreen;
+        font-size: 25px;
+    }
+    
+    input {
+        height: 40px;
+        padding-left: 10px;
+        border: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    
+    ._p {
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        width: max-content;
+        margin: 0;
+        margin-right: 20px;
+    }
+    
+    .btn__block {
+        margin-top: 0px;
+        width: max-content;
+    }
+    
+    .bth:hover {
+        background-color: cyan;
+        transition: ease 2s all;
+    }
+    
+    .container__desk {
+        align-items: flex-start;
+        margin: 20px;
+        margin-top: 30vh;
+        padding: 20px;
+        max-width: 1600px;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    .list {
+        border-radius: 20px;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+        transition: all 2s ease;
+        backdrop-filter: blur(10px);
+    }
+    
+    .delete-card {
+        display: none;
+        transition: all 2s ease;
+    }
+    
+    .delete-card {
+        margin: 0;
+    }
+    
+    .card:hover .delete-card {
+        display: block;
+    }
